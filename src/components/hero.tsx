@@ -20,7 +20,7 @@ const Hero = () => {
           </Link>
         </h1>
         <Link
-          href="https://github.com/robiuzzaman4"
+          href="https://github.com/robiuzzaman4/syntax-highlighting"
           target="_blank"
           className="px-4 py-2 w-fit text-sm font-medium rounded-full bg-slate-900 text-white"
         >

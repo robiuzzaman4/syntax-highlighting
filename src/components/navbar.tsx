@@ -28,7 +28,7 @@ const Navbar = () => {
           </svg>
         </Link>
         <Link
-          href="/"
+          href="https://github.com/robiuzzaman4/syntax-highlighting"
           className="text-sm font-medium grid place-items-center h-9 w-9 rounded"
         >
           <svg
