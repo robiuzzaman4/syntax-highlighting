@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import MarkdownProvider from "@/provider/mdx-provider";
 
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -21,12 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased font-sans bg-white text-slate-900`}
-      >
-        <Navbar />
-        <div className="min-h-[calc(100vh-56px)] mt-14">{children}</div>
-      </body>
+      <MarkdownProvider>
+        <body
+          className={`${inter.variable} antialiased font-sans bg-white text-slate-900`}
+        >
+          <Navbar />
+          <div className="min-h-[calc(100vh-56px)] mt-14 w-full max-w-4xl mx-auto px-4">
+            {children}
+          </div>
+        </body>
+      </MarkdownProvider>
     </html>
   );
 }

@@ -1,0 +1,18 @@
+"use client";
+
+import React, { ReactNode } from "react";
+import { MDXProvider } from "@mdx-js/react";
+
+const MarkdownProvider = ({ children }: { children: ReactNode }) => {
+  return (
+    <MDXProvider
+      components={{
+        article: (props) => <article {...props} />,
+      }}
+    >
+      {children}
+    </MDXProvider>
+  );
+};
+
+export default MarkdownProvider;
