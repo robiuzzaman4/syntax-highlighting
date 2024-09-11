@@ -27,7 +27,7 @@ export default function RootLayout({
           className={`${inter.variable} antialiased font-sans bg-white text-slate-900`}
         >
           <Navbar />
-          <div className="min-h-[calc(100vh-56px)] mt-14 w-full max-w-4xl mx-auto px-4">
+          <div className="min-h-[calc(100vh-56px)] mt-14 w-full max-w-4xl mx-auto px-4 overflow-hidden">
             {children}
           </div>
         </body>
