@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         sans: "var(--font-sans)",
       },
+      colors: {
+        primary: "#00c16a",
+      },
     },
   },
   plugins: [],
